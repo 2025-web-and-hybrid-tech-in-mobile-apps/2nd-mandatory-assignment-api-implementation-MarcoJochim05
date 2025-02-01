@@ -42,7 +42,7 @@ app.post("/login", (req, res) => {
 
   const token = username + Date.now();
   authorizedTokens.push(token);
-  res.status(200).json({ "Login successful, JWT token provided; jsonWebToken": token });
+  res.status(200).json({ "Login successful, JWT token provided": token });
 });
 
 app.post("/high-scores", (req, res) => {
